@@ -28,6 +28,8 @@ export const set = (cell, key, value) => {
 }
 
 export const isWall = ({type}) => WALL === type
+export const isEastWall = ({eastType}) => WALL === eastType
+export const isSouthWall = ({southType}) => WALL === southType
 
 export const areSamePlace = (q, w) => {
 	return isEqualPositions(q.position, w.position)
