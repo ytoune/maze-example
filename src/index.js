@@ -9,10 +9,10 @@ const main = async () => {
 
 	const sizeX = 100
 	const sizeY = 100
-	const scele = 2
+	const scale = 2
 	const canvas = document.querySelector('canvas')
-	canvas.width = scele * (2 * sizeX + 1)
-	canvas.height = scele * (2 * sizeY + 1)
+	canvas.width = scale * (2 * sizeX + 1)
+	canvas.height = scale * (2 * sizeY + 1)
 
 	const context = canvas.getContext('2d')
 
@@ -22,7 +22,7 @@ const main = async () => {
 		pushNext,
 	} = makeMap({size: {x: sizeX, y: sizeY}})
 
-	map$.subscribe(render(context, scele))
+	map$.subscribe(render(context, scale))
 
 	let dr = 1
 	while (true) {
