@@ -10,7 +10,10 @@
     "default": {
       "publicUrl": "/maze-example/",
       "engines": {
-        "browsers": ["> 1.0%", "not op_mini all"]
+        "browsers": [
+          "> 1.0%",
+          "not op_mini all"
+        ]
       }
     }
   },
@@ -26,6 +29,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/preset-typescript": "7.7.7",
     "@types/fs-extra": "8.0.1",
     "@types/gh-pages": "2.0.1",
     "@types/jest": "24.0.25",
