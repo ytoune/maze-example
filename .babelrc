@@ -1,6 +1,11 @@
 {
   "presets": [
     "@babel/preset-typescript",
-    ["@babel/preset-env", { "useBuiltIns": "entry", "corejs": 3 }]
+    ["@babel/preset-env", {
+      "useBuiltIns": "entry",
+      "corejs": 3,
+      "targets": "> 1.0%, not op_mini all",
+      "exclude": ["@babel/plugin-transform-regenerator"]
+    }]
   ]
 }

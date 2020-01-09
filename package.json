@@ -6,15 +6,13 @@
     "name": "ytoune"
   },
   "default": "dist/index.html",
+  "browserslist": [
+    "> 1.0%",
+    "not op_mini all"
+  ],
   "targets": {
     "default": {
-      "publicUrl": "/maze-example/",
-      "engines": {
-        "browsers": [
-          "> 1.0%",
-          "not op_mini all"
-        ]
-      }
+      "publicUrl": "/maze-example/"
     }
   },
   "license": "MIT",
