@@ -20,16 +20,15 @@
   "scripts": {
     "deploy": "yarn build && yarn push-page",
     "push-page": "gh-pages -d dist",
-    "build": "ts-node scripts/prebuild.ts && parcel build src/index.html --no-cache --no-source-maps",
+    "build": "rimraf dist && parcel build src/index.html --no-cache --no-source-maps --public-url /maze-example/",
     "watch": "parcel watch src/index.html",
     "start": "parcel src/index.html --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint '**/*.ts' --ignore-path .gitignore && tsc --noEmit"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.12.9",
     "@babel/preset-typescript": "7.12.7",
-    "@types/fs-extra": "9.0.4",
     "@types/gh-pages": "3.0.0",
     "@types/jest": "26.0.15",
     "@types/node": "14.14.10",
@@ -40,11 +39,11 @@
     "eslint-import-resolver-typescript": "2.3.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-prettier": "3.1.4",
-    "fs-extra": "9.0.1",
     "gh-pages": "3.1.0",
     "jest": "26.6.3",
     "parcel": "1.12.4",
     "prettier": "2.2.0",
+    "rimraf": "3.0.2",
     "rxjs": "6.6.3",
     "sass": "1.29.0",
     "sass-loader": "10.1.0",
