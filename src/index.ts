@@ -1,3 +1,4 @@
+import 'regenerator-runtime/runtime'
 import { render } from './render'
 import { makeMap } from './makeMap'
 
