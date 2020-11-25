@@ -27,31 +27,36 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/preset-typescript": "7.7.7",
-    "@types/fs-extra": "8.0.1",
-    "@types/gh-pages": "2.0.1",
-    "@types/jest": "24.0.25",
-    "@types/node": "13.1.5",
-    "@typescript-eslint/eslint-plugin": "2.15.0",
-    "@typescript-eslint/parser": "2.15.0",
-    "eslint": "6.8.0",
-    "eslint-config-prettier": "6.9.0",
-    "eslint-plugin-prettier": "3.1.2",
-    "fs-extra": "8.1.0",
-    "gh-pages": "2.2.0",
-    "jest": "24.9.0",
-    "parcel": "2.0.0-alpha.3.2",
-    "prettier": "1.19.1",
-    "rxjs": "6.5.4",
-    "sass": "1.24.3",
-    "sass-loader": "8.0.0",
-    "ts-jest": "24.3.0",
-    "ts-node": "8.5.4",
-    "typescript": "3.7.4"
+    "@babel/preset-typescript": "7.12.7",
+    "@types/fs-extra": "9.0.4",
+    "@types/gh-pages": "3.0.0",
+    "@types/jest": "26.0.15",
+    "@types/node": "14.14.10",
+    "@typescript-eslint/eslint-plugin": "4.8.2",
+    "@typescript-eslint/parser": "4.8.2",
+    "eslint": "7.14.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-import-resolver-typescript": "2.3.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "fs-extra": "9.0.1",
+    "gh-pages": "3.1.0",
+    "jest": "26.6.3",
+    "parcel": "1.12.4",
+    "prettier": "2.2.0",
+    "rxjs": "6.6.3",
+    "sass": "1.29.0",
+    "sass-loader": "10.1.0",
+    "ts-jest": "26.4.4",
+    "ts-node": "9.0.0",
+    "typescript": "4.1.2"
   },
   "jest": {
     "transform": {
       "^.+\\.(js|jsx|ts|tsx)$": "ts-jest"
     }
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
   }
 }
